@@ -30,6 +30,8 @@ import { Container } from '~/components/ui/Container'
 import { Tooltip } from '~/components/ui/Tooltip'
 import { url } from '~/lib'
 import { clamp } from '~/lib/math'
+
+import { Activity } from './Activity'
 export function Header() {
   const isHomePage = usePathname() === '/'
 
@@ -280,7 +282,7 @@ export function Header() {
                   <ThemeSwitcher />
                 </div>
               </motion.div>
-              {/* 
+
               <AnimatePresence>
                 {!isHomePage && (
                   <motion.div
@@ -295,7 +297,7 @@ export function Header() {
                     <Activity />
                   </motion.div>
                 )}
-              </AnimatePresence> */}
+              </AnimatePresence>
             </div>
           </Container>
         </div>
