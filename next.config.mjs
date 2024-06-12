@@ -82,7 +82,7 @@ const nextConfig = {
     ]
   },
 
-  webpack: (config, { dev, isServer }) => {
+  webpack: (config) => {
     config.plugins.push(CodeInspectorPlugin({ bundler: 'webpack' }))
     return config
   }
